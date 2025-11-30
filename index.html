@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSA Global Biotech - Vision for Farmers</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;line-height:1.6;color:#333}
+header{background:linear-gradient(135deg,#2e7d32,#66bb6a);color:#fff;padding:1rem 0;position:sticky;top:0;z-index:1000}
+nav{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+.logo-box{display:flex;align-items:center;gap:1rem}
+.logo-img{width:60px;height:60px}
+.logo-txt{font-size:1.3rem;font-weight:700}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:#fff;text-decoration:none;font-weight:500}
+.hero{background:linear-gradient(135deg,rgba(46,125,50,0.9),rgba(102,187,106,0.9));color:#fff;text-align:center;padding:5rem 2rem}
+.hero-logo{width:180px;margin:0 auto 2rem}
+.hero h1{font-size:2.5rem;margin-bottom:1rem}
+.hero p{font-size:1.2rem;margin-bottom:1rem}
+.tagline{font-size:1.6rem;font-weight:700;color:#ffd700;margin:1.5rem 0}
+.btn{display:inline-block;background:#fff;color:#2e7d32;padding:1rem 2rem;text-decoration:none;border-radius:50px;font-weight:700;margin-top:1rem}
+.container{max-width:1200px;margin:0 auto;padding:4rem 2rem}
+.sec-title{text-align:center;font-size:2.3rem;color:#2e7d32;margin-bottom:1rem}
+.sec-sub{text-align:center;color:#666;font-size:1.1rem;margin-bottom:3rem}
+.about-sec{background:#f9f9f9}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.about-txt{font-size:1.05rem;line-height:1.8}
+.about-img{width:100%;border-radius:15px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
+.stat-card{background:#fff;padding:2rem;border-radius:10px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.1)}
+.stat-num{font-size:2.3rem;font-weight:700;color:#2e7d32}
+.stat-lbl{color:#666;margin-top:0.5rem}
+.prod-sec{background:#fff}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem;margin-top:3rem}
+.prod-card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,0.1);transition:all 0.3s;border:2px solid #e0e0e0}
+.prod-card:hover{transform:translateY(-10px);border-color:#2e7d32}
+.prod-img{width:100%;height:280px;object-fit:cover;background:#f5f5f5}
+.prod-info{padding:1.5rem}
+.prod-info h3{color:#2e7d32;font-size:1.4rem;margin-bottom:0.8rem}
+.prod-info p{color:#666;line-height:1.6;font-size:0.95rem}
+.feat-sec{background:linear-gradient(135deg,#2e7d32,#66bb6a);color:#fff}
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:3rem}
+.feat-card{background:rgba(255,255,255,0.1);padding:2rem;border-radius:10px;text-align:center}
+.feat-icon{font-size:2.5rem;margin-bottom:1rem}
+.cert-sec{background:#f9f9f9}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
+.cert-card{background:#fff;padding:2rem;border-radius:10px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.1)}
+.cert-icon{font-size:2.5rem;color:#2e7d32;margin-bottom:1rem}
+.comp-info{background:#fff;padding:3rem 2rem;text-align:center}
+.comp-logo{width:280px;margin:0 auto 2rem}
+.comp-det{font-size:1.05rem;line-height:2;color:#333;max-width:800px;margin:0 auto}
+.contact-sec{background:linear-gradient(135deg,#1b5e20,#2e7d32);color:#fff}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
+.contact-card{background:rgba(255,255,255,0.15);padding:2rem;border-radius:15px;text-align:center}
+.contact-card h3{margin-bottom:1rem;font-size:1.4rem}
+.contact-card p{font-size:1.05rem;line-height:1.8}
+.contact-card a{color:#fff;text-decoration:none}
+footer{background:#1b5e20;color:#fff;text-align:center;padding:2rem}
+footer p{margin:0.5rem 0}
+@media(max-width:768px){
+.hero h1{font-size:2rem}
+.tagline{font-size:1.3rem}
+.about-grid{grid-template-columns:1fr}
+.prod-grid{grid-template-columns:1fr}
+.nav-links{display:none}
+.hero-logo{width:140px}
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo-box">
+<img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/2a859d40-804d-48ac-b6ad-d5fb2de9b5c0/2025-11-30T10-13-50-347Z-261a54b5-chat-image-1764497630329-0.jpg" class="logo-img">
+<div class="logo-txt">GSA Global Biotech</div>
+</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/2a859d40-804d-48ac-b6ad-d5fb2de9b5c0/2025-11-30T10-13-50-347Z-261a54b5-chat-image-1764497630329-0.jpg" class="hero-logo">
+<h1>GSA Global Biotech Pvt Ltd</h1>
+<p>Innovating Agriculture Through Biotechnology</p>
+<p class="tagline">VISION FOR FARMER'S</p>
+<a href="#products" class="btn">Explore Products</a>
+</section>
+
+<section id="about" class="about-sec">
+<div class="container">
+<h2 class="sec-title">About GSA Global Biotech</h2>
+<p class="sec-sub">Leading Agricultural Revolution with Innovation</p>
+<div class="about-grid">
+<div class="about-txt">
+<p><strong>GSA Global Biotech Pvt Ltd</strong> is a premier agricultural biotechnology company based in Nashik, Maharashtra.</p>
+<br>
+<p>With our commitment to Vision for Farmers, we develop ISO-certified products that enhance crop yields, improve soil health, and provide sustainable pest management solutions.</p>
+<br>
+<p>We are AN ISO 9001:2015 CERTIFIED COMPANY ensuring highest quality standards.</p>
+</div>
+<div>
+<img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/2a859d40-804d-48ac-b6ad-d5fb2de9b5c0/2025-11-30T10-13-59-190Z-18cfca2c-chat-image-1764497639173-3.jpg" class="about-img">
+</div>
+</div>
+<div class="stats">
+<div class="stat-card">
+<div class="stat-num">ISO</div>
+<div class="stat-lbl">Certified Company</div>
+</div>
+<div class="stat-card">
+<div class="stat-num">5+</div>
+<div class="stat-lbl">Premium Products</div>
+</div>
+<div class="stat-card">
+<div class="stat-num">100%</div>
+<div class="stat-lbl">Quality Assured</div>
+</div>
+<div class="stat-card">
+<div class="stat-num">24/7</div>
+<div class="stat-lbl">Customer Support</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="products" class="prod-sec">
+<div class="container">
+<h2 class="sec-title">Our Premium Products</h2>
+<p class="sec-sub">ISO Certified Solutions for Modern Agriculture</p>
+<div class="prod-grid">
+<div class="prod-card">
+<img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/2a859d40-804d-48ac-b6ad-d5fb2de9b5c0/2025-11-30T10-05-06-151Z-57137fdf-chat-image-1764497106132-1.jpg" class="prod-img">
+<div class="prod-info">
+<h3>VILARO</h3>
+<p>ISO certified premium agricultural solution for enhanced crop growth and productivity with optimal nutrition.</p>
+</div>
+</div>
+<div class="prod-card">
+<img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/2a859d40-804d-48ac-b6ad-d5fb2de9b5c0/2025-11-30T10-05-06-336Z-d243cfcc-chat-image-1764497106318-2.jpg" class="prod-img">
+<div class="prod-info">
+<h3>ROOT WEEL SUPER</h3>
+<p>Humic Acid 98% - Powerful soil conditioner and root growth enhancer for all crops.</p>
+</div>
+</div>
+<div class="prod-card">
+<img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/2a859d40-804d-48ac-b6ad-d5fb2de9b5c0/2025-11-30T10-05-12-501Z-66b8f637-chat-image-1764497112482-3.jpg" class="prod-img">
+<div class="prod-info">
+<h3>THUNDER BUGS</h3>
+<p>ISO certified pest management solution with effective protection and environmental safety.</p>
+</div>
+</div>
+<div class="prod-card">
+<img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/2a859d40-804d-48ac-b6ad-d5fb2de9b5c0/2025-11-30T10-13-50-489Z-0cec8cb9-chat-image-1764497630471-1.jpg" class="prod-img">
+<div class="prod-info">
+<h3>GLOBAL POWER</h3>
+<p>Natural Derivatives - Soil Enricher Granules from Seaweed for Roots & Plants. Net Weight: 10 KG</p>
+</div>
+</div>
+<div class="prod-card">
+<img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/2a859d40-804d-48ac-b6ad-d5fb2de9b5c0/2025-11-30T10-13-51-476Z-eb186746-chat-image-1764497631459-2.jpg" class="prod-img">
+<div class="prod-info">
+<h3>GLOBAL SOLUTION</h3>
+<p>Multi-Micronutrients Fertilizer Grade-2. Complete nutritional solution for balanced crop growth.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="feat-sec">
+<div class="container">
+<h2 class="sec-title" style="color:#fff">Why Choose GSA?</h2>
+<p class="sec-sub" style="color:rgba(255,255,255,0.9)">Excellence in Agricultural Innovation</p>
+<div class="feat-grid">
+<div class="feat-card">
+<div class="feat-icon">✓</div>
+<h3>ISO Certified</h3>
+<p>ISO 9001:2015 certified quality standards</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">🔬</div>
+<h3>Research Driven</h3>
+<p>Advanced R&D for innovation</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">🌱</div>
+<h3>Eco-Friendly</h3>
+<p>Sustainable products</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">👨‍🌾</div>
+<h3>Farmer Focused</h3>
+<p>Dedicated to farmers</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">💯</div>
+<h3>Quality Assured</h3>
+<p>Rigorous testing</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">📞</div>
+<h3>24/7 Support</h3>
+<p>Always available</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="cert-sec">
+<div class="container">
+<h2 class="sec-title">Certifications</h2>
+<p class="sec-sub">Quality & Compliance</p>
+<div class="cert-grid">
+<div class="cert-card">
+<div class="cert-icon">🏆</div>
+<h3>ISO 9001:2015</h3>
+<p>Quality Management</p>
+</div>
+<div class="cert-card">
+<div class="cert-icon">✓</div>
+<h3>Certified Products</h3>
+<p>All Products Tested</p>
+</div>
+<div class="cert-card">
+<div class="cert-icon">🌍</div>
+<h3>Eco Certified</h3>
+<p>Environment Safe</p>
+</div>
+<div class="cert-card">
+<div class="cert-icon">🔒</div>
+<h3>Safety Standards</h3>
+<p>Farmer Safe</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="comp-info">
+<div class="container">
+<img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/2a859d40-804d-48ac-b6ad-d5fb2de9b5c0/2025-11-30T10-13-59-190Z-18cfca2c-chat-image-1764497639173-3.jpg" class="comp-logo">
+<div class="comp-det">
+<p><strong>GAT No. 1465, H. No. B-6, Someshwar Colony</strong></p>
+<p><strong>Chandwad Vadali Bhoi, Nashik (M.H.) 423117</strong></p>
+<p>Email: gsaglobalbiotech11@gmail.com</p>
+<p>Customer Care: 7709742505</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact-sec">
+<div class="container">
+<h2 class="sec-title" style="color:#fff">Get In Touch</h2>
+<p class="sec-sub" style="color:rgba(255,255,255,0.9)">We're Here to Help You Grow</p>
+<div class="contact-grid">
+<div class="contact-card">
+<h3>📧 Email</h3>
+<p><a href="mailto:gsaglobalbiotech11@gmail.com">gsaglobalbiotech11@gmail.com</a></p>
+</div>
+<div class="contact-card">
+<h3>📞 Call Us</h3>
+<p><a href="tel:9422498505">+91 9422498505</a></p>
+<p><a href="tel:7709742505">+91 7709742505</a></p>
+</div>
+<div class="contact-card">
+<h3>📍 Visit Us</h3>
+<p>GAT No. 1465, H. No. B-6<br>Someshwar Colony, Chandwad<br>Vadali Bhoi, Nashik (M.H.)<br>423117</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 GSA Global Biotech Pvt Ltd. All Rights Reserved.</p>
+<p><strong>Vision for Farmer's</strong> - Innovating Agriculture</p>
+<p>AN ISO 9001:2015 CERTIFIED COMPANY</p>
+</footer>
+</body>
+</html>
